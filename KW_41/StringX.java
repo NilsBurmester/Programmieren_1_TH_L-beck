@@ -19,7 +19,7 @@
 class StringX {  
 
     public static String stringX(String s) { 
-        //ersettzung nur sinnvoll, wenn die länge von s größer als 2 ist
+        //ersetzung nur sinnvoll, wenn die länge von s größer als 2 ist
         if (s.length() > 2) {
             //string zwischen dem ersten und dem letzten Zeichen herausfinden
             String mid = s.substring(1, s.length() - 1);
