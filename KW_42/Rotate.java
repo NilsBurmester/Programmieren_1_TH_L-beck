@@ -31,7 +31,7 @@ class Rotate {
             //rückgabe von den rotierten buchstaben + rest
             return s.substring(newN) + s.substring(0, newN);
         }
-        //ist n kleiner 0, wird nach links rotiert, newN wird ermittelt wie oben, allerdings ist der absolute wert nötig
+        //ist n kleiner 0, wird nach links rotiert. da n < 0 brauchen wir den absoluten Wert 
         int newN = Math.abs(n) % length;
         //rückgabe der rotierten buchstaben + Rest
         return s.substring(newN) + s.substring(0, newN);
