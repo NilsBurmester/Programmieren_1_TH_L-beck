@@ -12,7 +12,7 @@
  * - Einen Betrag können Sie mittels `Math.abs()` bestimmen.
  * 
  */
-class Main {
+class LastDigit {
 
     public static boolean lastDigit(int a, int b) {
         //der modulo 10 gibt die letzte ziffer einer zahl wieder 
