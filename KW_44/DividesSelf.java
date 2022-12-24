@@ -28,6 +28,8 @@ class DividesSelf {
     public static boolean dividesSelf(int x) {
         //guard-klausel: 0 kann nicht durch 0 geteilt werden
         if (x == 0) return false;
+        //negative Werte in positive umwandeln
+        if(x < 0) x *= -1;
         //rest = alle ziffern außer die letzte
         int rest = x;
         //ziffer = zahl durch die geteilt wird
@@ -52,11 +54,14 @@ class DividesSelf {
     }
     
     public static int countDividesSelf(int n) {
+        //aggregatvariable für die lösung
         int solution = 0;
-
-        for (int i = 0; i < n; i++) {
+        //alle zahlen bis zur angegebenen schranke durchgehen
+        for (int i = 0; i <= n; i++) {
+            //wenn dividesSelf true ausgibt, erhöhe solution um 1 
             if (dividesSelf(i)) solution += 1;
         }
+        //gib lösung aus
         return solution;
     }
 
